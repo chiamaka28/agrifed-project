@@ -105,13 +105,26 @@ input::placeholder {
   width: 100%;
   margin: auto;
 }
+.items button {
+  padding: 3px 7px;
+  text-transform: capitalize;
+  font-size: 14px;
+  background: #00c341;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.items button:hover {
+  opacity: 0.7;
+}
 .favourite {
   /* align-self: start; */
   position: relative;
   left: -40px;
 }
 .card {
-  padding: 10px 40px;
+  padding: 8px 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,7 +136,7 @@ input::placeholder {
 .fruits {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 12px;
   align-items: center;
   flex-wrap: wrap;
   padding: 20px 0;
@@ -158,6 +171,10 @@ input::placeholder {
   top: 0;
   left: -80px;
 }
+.circle1 {
+  position: relative;
+  left: 10px;
+}
 .circle3 {
   position: absolute;
   top: -10px;
@@ -174,7 +191,7 @@ input::placeholder {
 }
 .tools {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -184,10 +201,32 @@ input::placeholder {
 .tool {
   background: white;
   padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
 .tool img {
   width: 100%;
   height: 190px;
+}
+.tool h5 {
+  margin-top: 5px;
+}
+.tool button {
+  padding: 7px 15px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  background-color: #00c341;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: white;
+}
+.tool button:hover {
+  opacity: 0.7;
 }
 footer {
   background-color: #011d07;
@@ -195,6 +234,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 50px 70px;
+  width: 100%;
 }
 .icons {
   font-size: 30px;
