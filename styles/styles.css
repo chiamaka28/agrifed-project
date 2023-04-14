@@ -117,6 +117,11 @@ input::placeholder {
   width: 100%;
   margin: auto;
 }
+button{
+  background: #00c341;
+  
+  border-radius: 10px;
+}
 .items button {
   padding: 3px 7px;
   text-transform: capitalize;
@@ -481,6 +486,7 @@ main {
   padding: 20px 10px;
   border-radius: 10px;
   display: flex;
+  justify-content:space-between;
 }
 .edit-btn {
   display: flex;
