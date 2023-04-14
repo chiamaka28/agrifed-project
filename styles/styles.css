@@ -170,7 +170,7 @@ input::placeholder {
 }
 .hire {
   position: relative;
-  width: 50%;
+  /* width: 50%; */
 }
 /* .hire {
   background: url(/images/Ellipse\ 128.png);
@@ -182,32 +182,34 @@ input::placeholder {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 200px;
 }
 .tractor {
   position: absolute;
   top: 20px;
-  left: -80px;
+  left: -50px;
 }
-/* .tractor img {
-  width: 150px;
-} */
+.circle1 img {
+  width: 800px;
+}
 .circle1 {
-  position: relative;
-  left: 10px;
+  margin: auto;
 }
 .circle3 {
   position: absolute;
   top: -10px;
-  left: -5px;
+  left: -8px;
 }
 .circle2 {
   position: absolute;
-  top: 10px;
+  top: 0px;
+  right: 5px;
+  overflow: hidden;
 }
 .txt {
   /* width: 50%; */
   max-width: 400px;
-  padding: 20px 0;
+  padding: 20px 20px;
 }
 .tools {
   display: flex;
@@ -216,7 +218,7 @@ input::placeholder {
   align-items: center;
   flex-wrap: wrap;
   padding: 50px 80px;
-  margin-top: 300px;
+  margin-top: 100px;
 }
 .tool {
   background: white;
@@ -325,8 +327,17 @@ footer .follow {
   margin-bottom: 70px;
   font-size: 25px;
 }
-.section .content-box .sign-up .input-box {
+.section .content-box .sign-up .option {
+  width: 100%;
+  padding: 25px 20px;
+  background: #e0e0e0;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 20px;
+  border-radius: 15px;
+}
+.section .content-box .sign-up .input-box {
+  margin-bottom: 15px;
 }
 .section .content-box .sign-up .input-box label {
   font-size: 16px;
@@ -340,6 +351,47 @@ footer .follow {
   border: 1px solid rgba(143, 226, 162, 1);
   font-size: 16px;
   border-radius: 15px;
+}
+.section .content-box .sign-up .reset {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section .content-box .sign-up .reset a {
+  text-decoration: none;
+  color: #00c341;
+}
+.section .content-box .sign-up .sign-in {
+  background-color: #00c341;
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.section .content-box .sign-up .google {
+  color: #00c341;
+  background: white;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 15px;
+  border: #011d07;
+  border: 1px solid #00c341;
+  outline: #00c341;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.section .content-box .sign-up .input-link {
+  text-align: center;
+}
+.section .content-box .sign-up .input-link a {
+  text-decoration: none;
+  color: #00c341;
 }
 /* customers dashboard*/
 .dashboard-nav a {
@@ -455,7 +507,7 @@ main {
   .tools {
     padding: 50px 40px;
   }
-  nav input {
+  #input {
     display: none;
     visibility: hidden;
   }
@@ -502,5 +554,8 @@ main {
   }
   .list-logo {
     display: block;
+  }
+  .text {
+    gap: 70px;
   }
 }
